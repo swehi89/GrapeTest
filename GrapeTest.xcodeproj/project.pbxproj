@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D296B132212C75840090FF72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B131212C75840090FF72 /* AppDelegate.swift */; };
+		D296B134212C75840090FF72 /* AddUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B133212C75840090FF72 /* AddUsersViewController.swift */; };
+		D296B137212C75840090FF72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296B135212C75840090FF72 /* Main.storyboard */; };
+		D296B139212C75850090FF72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D296B138212C75850090FF72 /* Assets.xcassets */; };
+		D296B13C212C75850090FF72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296B13A212C75850090FF72 /* LaunchScreen.storyboard */; };
+		D296B147212C75850090FF72 /* GrapeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B146212C75850090FF72 /* GrapeTestTests.swift */; };
+		D296B152212C75850090FF72 /* GrapeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B151212C75850090FF72 /* GrapeTestUITests.swift */; };
+		D296B165212C791F0090FF72 /* GrapeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B164212C791F0090FF72 /* GrapeUser.swift */; };
+		D296B167212C79320090FF72 /* MockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B166212C79320090FF72 /* MockDataStore.swift */; };
+		D296B16B212C80C30090FF72 /* GrapeUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B16A212C80C30090FF72 /* GrapeUserTableViewCell.swift */; };
+		D296B16D212C80DD0090FF72 /* GrapeUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296B16C212C80DD0090FF72 /* GrapeUserCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D296B143212C75850090FF72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D296B126212C75840090FF72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D296B12D212C75840090FF72;
+			remoteInfo = GrapeTest;
+		};
+		D296B14E212C75850090FF72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D296B126212C75840090FF72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D296B12D212C75840090FF72;
+			remoteInfo = GrapeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D296B12E212C75840090FF72 /* GrapeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrapeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D296B131212C75840090FF72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D296B133212C75840090FF72 /* AddUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUsersViewController.swift; sourceTree = "<group>"; };
+		D296B136212C75840090FF72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D296B138212C75850090FF72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D296B13B212C75850090FF72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D296B13D212C75850090FF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D296B142212C75850090FF72 /* GrapeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D296B146212C75850090FF72 /* GrapeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeTestTests.swift; sourceTree = "<group>"; };
+		D296B148212C75850090FF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D296B14D212C75850090FF72 /* GrapeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D296B151212C75850090FF72 /* GrapeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeTestUITests.swift; sourceTree = "<group>"; };
+		D296B153212C75850090FF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D296B164212C791F0090FF72 /* GrapeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeUser.swift; sourceTree = "<group>"; };
+		D296B166212C79320090FF72 /* MockDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataStore.swift; sourceTree = "<group>"; };
+		D296B16A212C80C30090FF72 /* GrapeUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeUserTableViewCell.swift; sourceTree = "<group>"; };
+		D296B16C212C80DD0090FF72 /* GrapeUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeUserCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D296B12B212C75840090FF72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B13F212C75850090FF72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B14A212C75850090FF72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D296B125212C75840090FF72 = {
+			isa = PBXGroup;
+			children = (
+				D296B130212C75840090FF72 /* GrapeTest */,
+				D296B145212C75850090FF72 /* GrapeTestTests */,
+				D296B150212C75850090FF72 /* GrapeTestUITests */,
+				D296B12F212C75840090FF72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D296B12F212C75840090FF72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D296B12E212C75840090FF72 /* GrapeTest.app */,
+				D296B142212C75850090FF72 /* GrapeTestTests.xctest */,
+				D296B14D212C75850090FF72 /* GrapeTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D296B130212C75840090FF72 /* GrapeTest */ = {
+			isa = PBXGroup;
+			children = (
+				D296B161212C78FA0090FF72 /* Util */,
+				D296B160212C78F30090FF72 /* Model */,
+				D296B15F212C78EA0090FF72 /* UI */,
+				D296B131212C75840090FF72 /* AppDelegate.swift */,
+				D296B135212C75840090FF72 /* Main.storyboard */,
+				D296B138212C75850090FF72 /* Assets.xcassets */,
+				D296B13A212C75850090FF72 /* LaunchScreen.storyboard */,
+				D296B13D212C75850090FF72 /* Info.plist */,
+			);
+			path = GrapeTest;
+			sourceTree = "<group>";
+		};
+		D296B145212C75850090FF72 /* GrapeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D296B146212C75850090FF72 /* GrapeTestTests.swift */,
+				D296B148212C75850090FF72 /* Info.plist */,
+			);
+			path = GrapeTestTests;
+			sourceTree = "<group>";
+		};
+		D296B150212C75850090FF72 /* GrapeTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D296B151212C75850090FF72 /* GrapeTestUITests.swift */,
+				D296B153212C75850090FF72 /* Info.plist */,
+			);
+			path = GrapeTestUITests;
+			sourceTree = "<group>";
+		};
+		D296B15F212C78EA0090FF72 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D296B163212C790C0090FF72 /* Cells */,
+				D296B133212C75840090FF72 /* AddUsersViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D296B160212C78F30090FF72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D296B164212C791F0090FF72 /* GrapeUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D296B161212C78FA0090FF72 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D296B166212C79320090FF72 /* MockDataStore.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D296B163212C790C0090FF72 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D296B16A212C80C30090FF72 /* GrapeUserTableViewCell.swift */,
+				D296B16C212C80DD0090FF72 /* GrapeUserCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D296B12D212C75840090FF72 /* GrapeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D296B156212C75850090FF72 /* Build configuration list for PBXNativeTarget "GrapeTest" */;
+			buildPhases = (
+				D296B12A212C75840090FF72 /* Sources */,
+				D296B12B212C75840090FF72 /* Frameworks */,
+				D296B12C212C75840090FF72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrapeTest;
+			productName = GrapeTest;
+			productReference = D296B12E212C75840090FF72 /* GrapeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D296B141212C75850090FF72 /* GrapeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D296B159212C75850090FF72 /* Build configuration list for PBXNativeTarget "GrapeTestTests" */;
+			buildPhases = (
+				D296B13E212C75850090FF72 /* Sources */,
+				D296B13F212C75850090FF72 /* Frameworks */,
+				D296B140212C75850090FF72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D296B144212C75850090FF72 /* PBXTargetDependency */,
+			);
+			name = GrapeTestTests;
+			productName = GrapeTestTests;
+			productReference = D296B142212C75850090FF72 /* GrapeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D296B14C212C75850090FF72 /* GrapeTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D296B15C212C75850090FF72 /* Build configuration list for PBXNativeTarget "GrapeTestUITests" */;
+			buildPhases = (
+				D296B149212C75850090FF72 /* Sources */,
+				D296B14A212C75850090FF72 /* Frameworks */,
+				D296B14B212C75850090FF72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D296B14F212C75850090FF72 /* PBXTargetDependency */,
+			);
+			name = GrapeTestUITests;
+			productName = GrapeTestUITests;
+			productReference = D296B14D212C75850090FF72 /* GrapeTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D296B126212C75840090FF72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = grape;
+				TargetAttributes = {
+					D296B12D212C75840090FF72 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D296B141212C75850090FF72 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D296B12D212C75840090FF72;
+					};
+					D296B14C212C75850090FF72 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D296B12D212C75840090FF72;
+					};
+				};
+			};
+			buildConfigurationList = D296B129212C75840090FF72 /* Build configuration list for PBXProject "GrapeTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D296B125212C75840090FF72;
+			productRefGroup = D296B12F212C75840090FF72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D296B12D212C75840090FF72 /* GrapeTest */,
+				D296B141212C75850090FF72 /* GrapeTestTests */,
+				D296B14C212C75850090FF72 /* GrapeTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D296B12C212C75840090FF72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D296B13C212C75850090FF72 /* LaunchScreen.storyboard in Resources */,
+				D296B139212C75850090FF72 /* Assets.xcassets in Resources */,
+				D296B137212C75840090FF72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B140212C75850090FF72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B14B212C75850090FF72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D296B12A212C75840090FF72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D296B165212C791F0090FF72 /* GrapeUser.swift in Sources */,
+				D296B16B212C80C30090FF72 /* GrapeUserTableViewCell.swift in Sources */,
+				D296B134212C75840090FF72 /* AddUsersViewController.swift in Sources */,
+				D296B16D212C80DD0090FF72 /* GrapeUserCollectionViewCell.swift in Sources */,
+				D296B132212C75840090FF72 /* AppDelegate.swift in Sources */,
+				D296B167212C79320090FF72 /* MockDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B13E212C75850090FF72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D296B147212C75850090FF72 /* GrapeTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B149212C75850090FF72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D296B152212C75850090FF72 /* GrapeTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D296B144212C75850090FF72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D296B12D212C75840090FF72 /* GrapeTest */;
+			targetProxy = D296B143212C75850090FF72 /* PBXContainerItemProxy */;
+		};
+		D296B14F212C75850090FF72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D296B12D212C75840090FF72 /* GrapeTest */;
+			targetProxy = D296B14E212C75850090FF72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D296B135212C75840090FF72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D296B136212C75840090FF72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D296B13A212C75850090FF72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D296B13B212C75850090FF72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D296B154212C75850090FF72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D296B155212C75850090FF72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D296B157212C75850090FF72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrapeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = grape.GrapeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D296B158212C75850090FF72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrapeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = grape.GrapeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D296B15A212C75850090FF72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrapeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = grape.GrapeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrapeTest.app/GrapeTest";
+			};
+			name = Debug;
+		};
+		D296B15B212C75850090FF72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrapeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = grape.GrapeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrapeTest.app/GrapeTest";
+			};
+			name = Release;
+		};
+		D296B15D212C75850090FF72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrapeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = grape.GrapeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrapeTest;
+			};
+			name = Debug;
+		};
+		D296B15E212C75850090FF72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrapeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = grape.GrapeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrapeTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D296B129212C75840090FF72 /* Build configuration list for PBXProject "GrapeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D296B154212C75850090FF72 /* Debug */,
+				D296B155212C75850090FF72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D296B156212C75850090FF72 /* Build configuration list for PBXNativeTarget "GrapeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D296B157212C75850090FF72 /* Debug */,
+				D296B158212C75850090FF72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D296B159212C75850090FF72 /* Build configuration list for PBXNativeTarget "GrapeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D296B15A212C75850090FF72 /* Debug */,
+				D296B15B212C75850090FF72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D296B15C212C75850090FF72 /* Build configuration list for PBXNativeTarget "GrapeTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D296B15D212C75850090FF72 /* Debug */,
+				D296B15E212C75850090FF72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D296B126212C75840090FF72 /* Project object */;
+}
