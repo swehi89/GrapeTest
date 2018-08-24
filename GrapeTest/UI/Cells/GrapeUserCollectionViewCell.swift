@@ -17,7 +17,7 @@ class GrapeUserCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     
     private var indexPath : IndexPath = []
-    var delegate : DeleteButtonDelegate!
+    private var delegate : DeleteButtonDelegate!
 
     /* Setting up cell for selected user collection cell
         Input for user object to set up view

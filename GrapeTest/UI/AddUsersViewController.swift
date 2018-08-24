@@ -16,13 +16,13 @@ class AddUsersViewController: UIViewController, UICollectionViewDataSource, UICo
     @IBOutlet weak var addedUserCountLabel: UILabel!
     
     
-    var grapeUserList = [GrapeUser]()
+    private var grapeUserList = [GrapeUser]()
     /*
      Array of users that are already added,
      since views only change when this array is updated
      didSet seems like an appropriate place to update the views
     */
-    var addedGrapeUserList = [GrapeUser]() {
+    private var addedGrapeUserList = [GrapeUser]() {
         didSet{
             updateViewsOnDataUpdate()
         }
@@ -37,7 +37,7 @@ class AddUsersViewController: UIViewController, UICollectionViewDataSource, UICo
         setUpViews()
     }
     
-    func setUpViews(){
+    private func setUpViews(){
         allUserTableView.delegate = self
         allUserTableView.dataSource = self
         addedUserCollectionView.delegate = self
@@ -48,7 +48,7 @@ class AddUsersViewController: UIViewController, UICollectionViewDataSource, UICo
      Updating views for user count, tableview, collectionview and text for button
      I know hardcoding strings is not the way to go, but it being a prototype i felt its okay
     */
-    func updateViewsOnDataUpdate(){
+    private func updateViewsOnDataUpdate(){
         addedUserCountLabel.text = "Added users: \(addedGrapeUserList.count)"
         allUserTableView.reloadData()
         addedUserCollectionView.reloadData()
