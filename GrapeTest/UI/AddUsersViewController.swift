@@ -10,10 +10,10 @@ import UIKit
 
 class AddUsersViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate ,UITableViewDataSource, UITableViewDelegate, DeleteButtonDelegate {
     
-    @IBOutlet weak var allUserTableView: UITableView!
-    @IBOutlet weak var addedUserCollectionView: UICollectionView!
-    @IBOutlet weak var addAllButton: UIButton!
-    @IBOutlet weak var addedUserCountLabel: UILabel!
+    @IBOutlet private weak var allUserTableView: UITableView!
+    @IBOutlet private weak var addedUserCollectionView: UICollectionView!
+    @IBOutlet private weak var addAllButton: UIButton!
+    @IBOutlet private weak var addedUserCountLabel: UILabel!
     
     
     private var grapeUserList = [GrapeUser]()
@@ -119,7 +119,7 @@ class AddUsersViewController: UIViewController, UICollectionViewDataSource, UICo
         addedGrapeUserList.remove(at: index.row)
     }
     
-    @IBAction func addAllButtonPressed(_ sender: Any) {
+    @IBAction private func addAllButtonPressed(_ sender: Any) {
         if grapeUserList.count != addedGrapeUserList.count {
             addedGrapeUserList = grapeUserList
         }

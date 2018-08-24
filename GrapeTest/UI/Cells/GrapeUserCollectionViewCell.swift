@@ -13,8 +13,8 @@ protocol DeleteButtonDelegate{
 }
 
 class GrapeUserCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet private weak var userImage: UIImageView!
+    @IBOutlet private weak var userNameLabel: UILabel!
     
     private var indexPath : IndexPath = []
     private var delegate : DeleteButtonDelegate!
@@ -30,7 +30,7 @@ class GrapeUserCollectionViewCell: UICollectionViewCell {
         self.delegate = delegate
     }
     
-    @IBAction func deleteButtonPressed(_ sender: Any) {
+    @IBAction private func deleteButtonPressed(_ sender: Any) {
         delegate.deleteButtonPressed(at: indexPath)
     }
     
