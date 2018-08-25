@@ -9,10 +9,9 @@
 import UIKit
 
 class GrapeUserTableViewCell: UITableViewCell {
-    @IBOutlet weak var userImage: UIImageView!
-    
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var checkmarkImage: UIImageView!
+    @IBOutlet private weak var userImage: UIImageView!
+    @IBOutlet private weak var userNameLabel: UILabel!
+    @IBOutlet private weak var checkmarkImage: UIImageView!
     
     /* Setting up cell for list with all users */
     func setUpCellWithUser(user : GrapeUser , selected : Bool){
